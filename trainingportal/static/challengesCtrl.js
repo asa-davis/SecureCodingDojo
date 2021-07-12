@@ -59,6 +59,7 @@ app.controller("challengesCtrl", function($scope, $http, $routeParams) {
                         }
                     }
                 }
+                console.error(response.data.targetUrl)
                 $scope.targetUrl = response.data.targetUrl;
                 $scope.moduleChallengeDefinitions = challengeDefinitions;
 
